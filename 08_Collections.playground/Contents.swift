@@ -91,3 +91,34 @@ odddiDigits.subtracting(primeNumbers).sorted()
 
 // A + B = (A-B) union (B-a)
 odddiDigits.symmetricDifference(primeNumbers).sorted()
+
+
+
+
+// DICTIONARIOS
+
+var nameOfInterger = [Int:String]()
+nameOfInterger[15] = "quince"
+
+
+var airports: [String:String] = ["YYZ": "TORONTO",
+                                 "DUB": "DUBLIN",
+                                 "PMI": "PALMA DE MAYORCA"
+]
+
+
+airports.count
+airports.isEmpty
+
+airports["LHR"] = "LONDON HEARTHROW"
+
+if let oldValue = airports.updateValue("DUBLIN AIRPORT", forKey: "DUB") {
+    print("El aeropuerto tenia antiguamente el nombre de \(oldValue)")
+}
+
+airports["PMI"] = nil
+airports
+
+airports.removeValue(forKey: "DUB")
+
+airports
