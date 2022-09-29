@@ -30,10 +30,28 @@ if emptyString.isEmpty {
 
 var newSomeString = "Un Caballo"
 newSomeString += " y un carruaje"
-
 //tipo de dato evaluado
 
 
 
 
+//Characteres
 
+let name = "Juan"
+for ch in name {
+    print(ch)
+}
+
+
+let exclamatioMark : Character = "!"
+
+let nameCahars : [Character] = ["J", "u", "a", "n"]
+var nameString = String(nameCahars)
+
+let compoundName = "Juan " + "Gabriel"
+
+nameString.append(exclamatioMark)
+
+let multiplier = 3
+var message = "El producto de \(multiplier) x 2.4 da \(multiplier * 2)"
+message.append(exclamatioMark)
