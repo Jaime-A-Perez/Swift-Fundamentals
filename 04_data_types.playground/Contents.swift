@@ -38,7 +38,7 @@ let http200Status = (statusCode: 200, description: "ok" )
 print("El código del estad es: \(statusCode)")
 
 
-// OPTIONALS
+// OPTIONALS and NIL
 
 let possibleAge = "31"
 let convertedAge = Int(possibleAge) // Int?
@@ -49,3 +49,15 @@ serverREsponseCode = nil
 var surveAnswer : String?
 
 print(surveAnswer)
+
+
+
+// Force Unwrapping
+
+
+if convertedAge != nil {
+    print("la edad no es nil: \(convertedAge!)")
+}else {
+    print("la edad es nil")
+}
+
