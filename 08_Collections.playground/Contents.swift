@@ -120,5 +120,24 @@ airports["PMI"] = nil
 airports
 
 airports.removeValue(forKey: "DUB")
-
 airports
+
+
+
+// iteracion de diccionarios
+
+for (key, value) in airports {
+    print("\(key) - \(value)")
+}
+
+for airportKeys in airports.keys {
+    print("\(airportKeys)")
+}
+
+for airportValues in airports.values {
+    print("\(airportValues)")
+}
+
+
+let airportKeys = [String](airports.keys)
+let airportKeys2 = [String](airports.keys.sorted())
