@@ -78,3 +78,16 @@ if let firstNumber = Int("4"),
     firstNumber < secondNumber && secondNumber < 100{
     print("\(firstNumber) < \(secondNumber) < 100")
 }
+
+
+
+// Unwrap implicito
+
+let possibleString: String? = "Un String Optional"
+let forcedString: String = possibleString!
+
+let assumeedString : String! = "Un String unwrapped de forma implicita a partir de un optional"
+let implicitString : String = assumeedString
+
+print(assumeedString)
+print(implicitString)
