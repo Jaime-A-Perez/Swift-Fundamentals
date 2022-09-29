@@ -65,7 +65,29 @@ let someNumber = 00000097.540
 let oneMIllion = 1_000_000
 let justMoreThanAMIllion = 1_000_000.000_001
 
+
+//Error de tipo de Dato
 //let canNotBeNegative : UInt8 = -1
+
+
+
+// Casting
+let twoThousand: UInt16 = 2_000
+let one: UInt8 = 1
+let twoThousandAndOne = twoThousand + UInt16(one) //Casting
+
+let three = 3
+let decimalNumber = 0.234
+let anotherNUmber = Double(three) + decimalNumber
+
+let integer = Int(anotherNUmber)
+
+
+
+
+
+
+
 
 
 
