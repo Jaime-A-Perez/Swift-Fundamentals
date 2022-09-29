@@ -62,5 +62,20 @@ if name == "Juan Gabriel" {
 
 
 
+// Operador ternario
+
+let contentHeight = 40
+var hasImage = true
+var rowHeight = 0
+if hasImage {
+    rowHeight = contentHeight + 50
+}else {
+    rowHeight = contentHeight + 10
+}
+
+
+rowHeight = contentHeight + (hasImage ? 50 : 10)
+
+
 
 
