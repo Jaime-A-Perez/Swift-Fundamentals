@@ -83,6 +83,11 @@ let anotherNUmber = Double(three) + decimalNumber
 let integer = Int(anotherNUmber)
 
 
+// Type Alias
+
+typealias AudioSample = UInt16
+var maxAmplitud = AudioSample.max // UInt16.max
+
 
 
 
