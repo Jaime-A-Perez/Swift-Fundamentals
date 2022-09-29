@@ -90,3 +90,32 @@ var userColor : String?
 
 var colorName = userColor ?? defaultColor
 
+
+
+// Rangos
+
+
+for idx in 1...5 {
+    print(idx)
+}
+
+for idx in 1..<5 {
+    print(idx)
+}
+
+
+let names = ["Juan", "ricardo", "Pedro"]
+for i in 0..<names.count {
+    print("la persona \(i) se llama \(names[i])")
+}
+
+
+for name in names[0...] {
+    print(name)
+}
+
+for name in names[..<2] {
+    print(name)
+}
+let range = ...2
+
