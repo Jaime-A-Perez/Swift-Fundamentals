@@ -40,3 +40,12 @@ let _ = moreDoubles.removeLast()
 moreDoubles
 
 
+// Iterar por un Array
+
+//for item in moreDoubles {
+//    print(item)
+//}
+
+for (idx, item) in moreDoubles.enumerated() {
+    print("Item \(idx + 1): \(item)")
+}
