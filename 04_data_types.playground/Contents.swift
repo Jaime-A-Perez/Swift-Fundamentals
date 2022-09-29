@@ -48,6 +48,8 @@ serverREsponseCode = nil
 
 var surveAnswer : String?
 
+surveAnswer = "34"
+
 print(surveAnswer)
 
 
@@ -61,3 +63,18 @@ if convertedAge != nil {
     print("la edad es nil")
 }
 
+
+
+
+// Optional Binding
+
+if let actualAnswer = surveAnswer {
+    print("El string \(surveAnswer) tiene el valor: \(actualAnswer)")
+}
+
+
+if let firstNumber = Int("4"),
+   let secondNumber = Int("43"),
+    firstNumber < secondNumber && secondNumber < 100{
+    print("\(firstNumber) < \(secondNumber) < 100")
+}
