@@ -57,7 +57,7 @@ var message = "El producto de \(multiplier) x 2.4 da \(multiplier * 2)"
 message.append(exclamatioMark)
 
 
-// Subindices, subString
+// Subindices
 
 let greeting = "Hola, ¿que tal?"
 greeting[greeting.startIndex]
@@ -86,3 +86,13 @@ range
 
 
 welcome.removeSubrange(range)
+
+
+
+// SubString
+
+let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
+
+let fistPart = greeting[..<index] // Esto es un Substring
+
+let newString = String(fistPart) // Esto es un String
