@@ -34,4 +34,17 @@ let minValue64Bits = Int64.min
 
 
 
+// Float
+let f1 : Float = 3.14159265
+
+// Double
+let d1 : Double = 3.14159265
+
+
+let meaningOfLife = 42
+let pi = 3.14159
+let anotherPi = 3 + 0.1416
+
+
+
 
