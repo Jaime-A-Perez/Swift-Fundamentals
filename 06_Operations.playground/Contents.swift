@@ -77,5 +77,16 @@ if hasImage {
 rowHeight = contentHeight + (hasImage ? 50 : 10)
 
 
+// Operador Nil coalescing
 
+let defaultAge = 18
+var userAge : Int?
+
+var ageToBeUsed = userAge ?? defaultAge
+
+
+let defaultColor = "red"
+var userColor : String?
+
+var colorName = userColor ?? defaultColor
 
