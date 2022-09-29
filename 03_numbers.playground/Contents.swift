@@ -47,4 +47,25 @@ let anotherPi = 3 + 0.1416
 
 
 
+// Literales
+
+let decimalInteger = 17 // 1 + 10  + 7
+let binaryInteger = 0b10001
+let octalInteger = 0o21
+let hexadecimaInteger = 0x11
+
+let decimaDlouble = 12.1875
+let exponencialDobule = 1.21875e1
+let hexadecimalDouble = 0xC.3p0
+
+
+let paddedDouble = 000123.456
+let someNumber = 00000097.540
+
+let oneMIllion = 1_000_000
+let justMoreThanAMIllion = 1_000_000.000_001
+
+//let canNotBeNegative : UInt8 = -1
+
+
 
