@@ -119,3 +119,7 @@ for name in names[..<2] {
 }
 let range = ...2
 
+
+// Operadores logicos
+
+//&&, !!, !
