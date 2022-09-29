@@ -26,6 +26,8 @@ if a == b {
 
 "hello " + "World"
 
+
+// Aritmeticas
 let five = 5
 let minusFive = -five
 let plusFive = -minusFive
@@ -33,3 +35,32 @@ let plusFive = -minusFive
 var number = 5
 number += 3
 number -= 2
+
+
+
+//Compationes
+
+1 == 1
+1 == 2
+1 != 2
+2 > 1
+2 < 1
+2 >= 1
+2 <= 1
+
+let name = "Juan Gabriel"
+
+if name == "Juan Gabriel" {
+    print("Bienvenido \(name), eres invitado")
+}else {
+    print("Cuidado, ha aparecido un \(name) salvahe")
+}
+
+
+(1, "Juan")  < (2, "Ricardo") //con tuplas
+(1, "juan") == (2, "Ricardo")
+
+
+
+
+
