@@ -70,3 +70,24 @@ if let removedCharacter = letters.remove("a") {
 for ch in letters.sorted() {
     print(ch)
 }
+
+
+// iteraciones y operaciones con conjuntos
+
+let odddiDigits : Set = [1,3,5,7,9]
+let evenDigits : Set = [0,2,4,6,8]
+let primeNumbers : Set = [2,3,5,7]
+
+
+// A union B = elementos que son o bien de A, o bien de B o de los dos
+odddiDigits.union(evenDigits).sorted()
+
+// A interseccion B = elementos que son a la vez de a y de B
+evenDigits.intersection(primeNumbers).sorted()
+odddiDigits.intersection(primeNumbers).sorted()
+
+// A - B = elementos que son de A pero no son de B
+odddiDigits.subtracting(primeNumbers).sorted()
+
+// A + B = (A-B) union (B-a)
+odddiDigits.symmetricDifference(primeNumbers).sorted()
