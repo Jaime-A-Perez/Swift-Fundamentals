@@ -96,3 +96,10 @@ let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
 let fistPart = greeting[..<index] // Esto es un Substring
 
 let newString = String(fistPart) // Esto es un String
+
+
+// Prefijos y sufijos
+
+let newGreeting = "Hola, soy Juan"
+newGreeting.hasPrefix("Hola")
+newGreeting.hasSuffix("an")
