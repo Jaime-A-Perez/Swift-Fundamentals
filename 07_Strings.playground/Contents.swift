@@ -103,3 +103,24 @@ let newString = String(fistPart) // Esto es un String
 let newGreeting = "Hola, soy Juan"
 newGreeting.hasPrefix("Hola")
 newGreeting.hasSuffix("an")
+
+
+// REpresntaciones Unnicode
+
+let ghost = "¡¡ Fantasma !! 👻"
+
+for codeUnit in ghost.utf8{
+    print(codeUnit, terminator: " ")
+}
+
+print("")
+for codeUnit in ghost.utf16{
+    print(codeUnit, terminator: " ")
+}
+
+print("")
+for codeUnit in ghost.unicodeScalars{
+    print(codeUnit, terminator: " ")
+}
+
+
