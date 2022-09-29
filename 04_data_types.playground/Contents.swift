@@ -36,3 +36,16 @@ print("El código del error es: \(http404Error.0)")
 
 let http200Status = (statusCode: 200, description: "ok" )
 print("El código del estad es: \(statusCode)")
+
+
+// OPTIONALS
+
+let possibleAge = "31"
+let convertedAge = Int(possibleAge) // Int?
+
+var serverREsponseCode: Int? = 404
+serverREsponseCode = nil
+
+var surveAnswer : String?
+
+print(surveAnswer)
