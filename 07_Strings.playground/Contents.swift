@@ -55,3 +55,34 @@ nameString.append(exclamatioMark)
 let multiplier = 3
 var message = "El producto de \(multiplier) x 2.4 da \(multiplier * 2)"
 message.append(exclamatioMark)
+
+
+// Subindices, subString
+
+let greeting = "Hola, ¿que tal?"
+greeting[greeting.startIndex]
+//greeting[greeting.endIndex]
+greeting[greeting.index(before: greeting.endIndex)]
+greeting[greeting.index(after: greeting.startIndex)]
+
+
+for idx in greeting.indices {
+    print("\(greeting[idx]) - \(idx)", terminator: "\n")
+}
+
+var welcome = "Hola"
+
+welcome.insert("!", at: welcome.endIndex)
+
+welcome.insert(contentsOf: " que tal", at: welcome.index(before: welcome.endIndex))
+
+welcome.remove(at: welcome.index(before: welcome.endIndex))
+welcome
+
+
+let range = welcome.index(welcome.endIndex, offsetBy: -7)..<welcome.endIndex
+
+range
+
+
+welcome.removeSubrange(range)
