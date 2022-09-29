@@ -49,3 +49,24 @@ moreDoubles
 for (idx, item) in moreDoubles.enumerated() {
     print("Item \(idx + 1): \(item)")
 }
+
+
+
+
+// CONJUNTOS (SET)
+
+
+var letters = Set<Character>()
+letters.count
+letters.insert("a")
+letters.insert("w")
+letters.insert("r")
+letters
+
+if let removedCharacter = letters.remove("a") {
+    print("Se ha eliminado \"\(removedCharacter)\"")
+}
+
+for ch in letters.sorted() {
+    print(ch)
+}
