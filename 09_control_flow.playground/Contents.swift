@@ -1,5 +1,7 @@
 import UIKit
 
+
+// Cycle For in
 let names = ["Ricardo", "Juan", "Edgar"]
 
 for name in names {
@@ -35,7 +37,44 @@ for tickMark in 0..<minutes{
 let miminuteInterval = 15
 for numOfHour in 0...24 {
     for tickMark in stride(from: 0, to: minutes, by: miminuteInterval){
-        print("\(hour): \(tickMark)")        
+        print("\(hour): \(tickMark)")
     }
     hour += 1
 }
+
+
+// Cycle while
+
+var i = 0
+while i <= 10 {
+    i += 1
+}
+print(i)
+
+
+// Cycle repeat while
+
+repeat {
+    i += 1
+}while i <= 10
+print(i)
+
+
+// Prim Numbers
+
+var maxNum = 1010
+var currentNum = 1
+var numbersPrims : [Int] = []
+for num in 2...maxNum {
+    for curentNum in 2..<num{
+        if (num % curentNum) == 0 {
+             break
+            }else {
+                numbersPrims.append(num)
+                break
+        }
+    }
+}
+print(numbersPrims)
+
+
