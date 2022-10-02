@@ -119,7 +119,8 @@ if temp <= 15 {
 
 
 
-//
+// Switch with ranges
+
 let moons = 62
 let phrase = "lunas en Saturno"
 let naturalCount : String
@@ -140,3 +141,34 @@ default:
 
 print("\(naturalCount) \(phrase)")
     
+
+// Switch with tuplas
+
+let somePoint = (1,1)
+switch somePoint {
+case (0,0):
+    print("El punto \(somePoint) es el origen de coordenadas")
+case (_,0):
+    print("El punto \(somePoint) se halla sobre el eje de las X")
+case (0,_):
+    print("El punto \(somePoint) se halla sobre el eje de las Y")
+case (-2...2,-2...2):
+    print("El punto \(somePoint) se halla en el interio del cuadrado de lado 4")
+default:
+    print("El punto se encuetra en algún otro lado")
+}
+
+
+let anotherPoint = (2,23)
+switch anotherPoint {
+case (let x, 0):
+    print("Sobre el eje de las X, con valor \(x)")
+case (0, let y):
+    print("Sobre el eje de las Y, con valor \(y)")
+case let (x,y) where x == y:
+    print("El punto se halla sobre la recta x = y")
+case let (x,y) where x == -y:
+    print("El punto se halla sobre la recta x = -y")
+case (let x, let y):
+    print("En algún otro lugar del plano, en (\(x),\(y))")
+}
