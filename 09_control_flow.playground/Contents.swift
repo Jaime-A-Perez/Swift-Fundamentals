@@ -180,13 +180,13 @@ let anotherCharacter: Character = "e"
 switch anotherCharacter {
 case "a", "e", "i", "o", "u":
     print("Se trata de una vocal")
-case "b", "c", "d": // TODO: acabar con el resto
+case "b", "c", "d": // TODO: acabar con el resto consonantes
     print("Se trata de una consonante")
 default:
     print("Se trata de un caracter no vocal ni consonante(minuscula)")
 }
 
-let stillAnotherPoint = (9,0)
+let stillAnotherPoint = (0,5)
 switch stillAnotherPoint {
 case (let distance, 0), (0, let distance):
     print("Se halla sobre el eje, a distancia \(distance) del origen ")
@@ -195,3 +195,47 @@ default:
 }
 
 
+
+
+// Control Transfer Sentences - continue, break, fallthrough, return, throw
+
+let sentence = "Las mentes grandes piensan"
+let charactersToRemove : [Character] = ["a", "e", "i", "o", "u"]
+var filteredSentenceWhitoutVocals = ""
+for ch in sentence{
+    
+    if charactersToRemove.contains(ch){
+        // no do nothing
+        continue
+    }
+    filteredSentenceWhitoutVocals.append(ch)
+}
+
+var filteredSentenceWhitoutConsonats = ""
+for ch in sentence {
+    if charactersToRemove.contains(ch){
+        filteredSentenceWhitoutConsonats.append(ch)
+    }
+}
+
+
+switch stillAnotherPoint {
+case (let distance, 0), (0, let distance):
+    print("Se halla sobre el eje, a distancia \(distance) del origen ")
+default:
+   break
+}
+
+
+// fallthrough
+
+let integerToDescrive = 5
+var description = "El número \(integerToDescrive) es"
+switch integerToDescrive {
+case 2,3,5,7,9:
+    description += " un número primo y"
+    fallthrough
+default:
+    description += " un número entero."
+}
+print(description)
