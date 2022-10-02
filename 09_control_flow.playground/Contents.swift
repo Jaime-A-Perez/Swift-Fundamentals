@@ -115,4 +115,28 @@ if temp <= 15 {
     print("Enoueza a hacer calor. Apaga la calefacción")
 }else {
     print("La sensación termica es agradable. No hace falta modificarla")
+}
 
+
+
+//
+let moons = 62
+let phrase = "lunas en Saturno"
+let naturalCount : String
+switch moons {
+case 0:
+    naturalCount = "No hay"
+case 1...5:
+    naturalCount = "Hay unas pocas"
+case 6...12:
+    naturalCount = "Hay bastantes"
+case 13...100:
+    naturalCount = "Hay decenas de"
+case 101...1000:
+    naturalCount = "Hay centenares de"
+default:
+    naturalCount = "Hay muchiiiisimas"
+}
+
+print("\(naturalCount) \(phrase)")
+    
