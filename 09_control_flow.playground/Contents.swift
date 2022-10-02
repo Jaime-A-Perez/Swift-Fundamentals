@@ -106,3 +106,13 @@ print("For: \(countCycleFor) - While: \(countCybleWhile)" )
 
 
 
+// If and else
+
+var temp = 18
+if temp <= 15 {
+    print("Hace frio! Enciende la calefacció")
+}else if temp > 25{// tem > 25
+    print("Enoueza a hacer calor. Apaga la calefacción")
+}else {
+    print("La sensación termica es agradable. No hace falta modificarla")
+
