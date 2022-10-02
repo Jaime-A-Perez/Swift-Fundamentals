@@ -239,3 +239,29 @@ default:
     description += " un número entero."
 }
 print(description)
+
+
+ 
+// Guard, guard let, return
+
+var peolple : [String:Any] = [ "name": "Juan", "age":32, "isMale": true]
+
+if let surname = peolple["surname"]{
+    print(surname)
+}
+
+func testValidation(person:[String:Any]){
+    guard let surname2 = person["surname"] else{
+        print("No hay apellído")
+        return
+    }
+    print(surname2)
+    
+    guard let age = person["age"] else {
+        print("No hay edad")
+        return
+    }
+    print("La edad de la persona es \(age)")
+}
+
+testValidation(person: peolple)
