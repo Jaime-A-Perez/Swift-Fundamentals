@@ -172,3 +172,26 @@ case let (x,y) where x == -y:
 case (let x, let y):
     print("En algún otro lugar del plano, en (\(x),\(y))")
 }
+
+
+// Switch with composite cases
+
+let anotherCharacter: Character = "e"
+switch anotherCharacter {
+case "a", "e", "i", "o", "u":
+    print("Se trata de una vocal")
+case "b", "c", "d": // TODO: acabar con el resto
+    print("Se trata de una consonante")
+default:
+    print("Se trata de un caracter no vocal ni consonante(minuscula)")
+}
+
+let stillAnotherPoint = (9,0)
+switch stillAnotherPoint {
+case (let distance, 0), (0, let distance):
+    print("Se halla sobre el eje, a distancia \(distance) del origen ")
+default:
+    print("No esta sobre el eje")
+}
+
+
