@@ -60,13 +60,16 @@ repeat {
 print(i)
 
 
-// Prim Numbers
+// Prim Numbers For
 
-var maxNum = 1010
+var countCycleFor = 0
+var maxNum = 1000
 var currentNum = 1
 var numbersPrims : [Int] = []
 for num in 2...maxNum {
+    countCycleFor += 1
     for curentNum in 2..<num{
+        countCycleFor += 1
         if (num % curentNum) == 0 {
              break
             }else {
@@ -76,5 +79,30 @@ for num in 2...maxNum {
     }
 }
 print(numbersPrims)
+
+// Prime Numbers
+
+var countCybleWhile = 0
+while maxNum >= 1 {
+    countCybleWhile += 1
+    var currentNum = 2
+    while currentNum < maxNum {
+        countCybleWhile += 1
+        if (maxNum % currentNum) == 0 {
+            break
+        }else{
+            numbersPrims.append(maxNum)
+            currentNum += 1
+            break
+        }
+    }
+    maxNum -= 1
+}
+numbersPrims.sort()
+print(numbersPrims)
+
+
+print("For: \(countCycleFor) - While: \(countCybleWhile)" )
+
 
 
