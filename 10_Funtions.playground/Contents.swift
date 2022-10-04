@@ -79,6 +79,8 @@ func minMax(array: [Int]) -> (min:Int, max:Int)?{
 }
 
 
+
+
 // Labels of parameters and Variadics
 
 let bound = minMax(array: [23,4,4,65,67])
@@ -110,3 +112,33 @@ func mean(_ numbers: Double...) -> Double {
 }
 
 mean(1,2)
+
+
+
+
+// Parameters type inout
+
+var x = 5
+
+func addOne(number: Int) {
+    var number2 = number
+    number2 += 1
+    print("Now x number is  worth \(number2)")
+}
+print("x is worth \(x)")
+addOne(number: x)
+print("x is worth \(x)")
+addOne(number: 2)
+
+
+func swapTwoInts(_ a: inout Int, _ b: inout Int){
+    let temA = a
+    a = b
+    b = temA
+}
+
+var someInt = 3
+var otherInt = 7
+print("someInt is worth \(someInt) and otherInt is worth  \(otherInt)")
+swapTwoInts(&someInt, &otherInt)
+print("someInt is worth \(someInt) and otherInt is worth  \(otherInt)")
