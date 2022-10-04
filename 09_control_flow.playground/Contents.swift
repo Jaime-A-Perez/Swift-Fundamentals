@@ -265,3 +265,13 @@ func testValidation(person:[String:Any]){
 }
 
 testValidation(person: peolple)
+
+
+
+// Versions
+
+if #available(iOS 12, macOS 11, *){
+//    Ejecutar las acciones a lo iOS12+
+}else{
+//    Mantener el código vieho con versiones anteriores de iOS, macOS
+}
