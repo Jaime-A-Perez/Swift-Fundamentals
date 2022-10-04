@@ -78,5 +78,35 @@ func minMax(array: [Int]) -> (min:Int, max:Int)?{
     return (currentMIn, currentMax)
 }
 
+
+// Labels of parameters and Variadics
+
 let bound = minMax(array: [23,4,4,65,67])
 print("los valores se encuentran entre \(bound!.min) y \(bound!.max)")
+
+
+func someFunction(f1 firsParamName:Int, f2 secondParamName:Int = 6){
+    print(firsParamName + secondParamName)
+}
+
+someFunction(f1: 1, f2: 4)
+someFunction(f1: 1)
+
+func greeting(_ person:String, from hometown: String) -> String {
+    return "hola \(person) un placer que nos visites desde \(hometown)"
+}
+
+greeting( "Juan", from: "Mayorca")
+
+
+
+// Variadico (n numbers of parameters (of same type))
+func mean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+
+mean(1,2)
