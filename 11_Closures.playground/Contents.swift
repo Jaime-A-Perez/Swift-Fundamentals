@@ -80,3 +80,18 @@ let numbersRealStrings = realNumbers.map { (number) -> String in
     }
     return output
 }
+
+let numbersRealStringsTwo = realNumbers.map { (number) -> String in
+    var number = number
+    var output = ""
+    let minus = "menos"
+    let negativeNumber = number < 0 ? true: false
+    if number < 0 { number *= -1}
+    
+    repeat{
+        output = digitNames[number % 10]! + output
+        number /= 10
+    }while number > 0
+    if negativeNumber { output = minus + output}
+    return output
+}
