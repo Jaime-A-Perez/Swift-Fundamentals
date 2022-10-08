@@ -223,4 +223,35 @@ let containsAll = set1.isSuperset(of: set2)
 
 
 
+// Escaping Closure
+func fizzBuzz(n: Int) -> Void{
+    for num in 1...n {
+        if num % 3  == 0 && num % 5 == 0 {
+            print("FizzBuzz")
+        }else if num % 3  == 0 {
+            print("Fizz")
+        }else if num % 5 == 0{
+            print("Buzz")
+        }else {
+            print(num)
+        }
+    }
+}
 
+
+func fizzBuzz1(n: Int) {
+    for num in 1...n {
+        switch (num % 3 == 0, num % 5 == 0) {
+        case (true, true):
+            print("FizzBuzz")
+        case (true, false):
+            print("Fizz")
+        case (false, true):
+            print("Buzz")
+        default:
+            print(num)
+        }
+    }
+}
+
+fizzBuzz1(n: 15)
