@@ -1,4 +1,4 @@
-#  Swift Fundamentals ([![Swift](https://img.shields.io/badge/Swift-000000?style=for-the-badge&logo=swift&logoColor=FE5C2E&labelColor=101010)]())
+#  Swift Fundamentals {[![Swift](https://img.shields.io/badge/Swift-000000?style=for-the-badge&logo=swift&logoColor=FE5C2E&labelColor=101010)]()}
 
 
 
